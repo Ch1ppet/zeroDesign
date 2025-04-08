@@ -1,0 +1,18 @@
+.header {
+    height: 114px;
+    margin-bottom: 8px;
+}
+
+.header__container {
+    height: 100%;
+}
+
+.header__container, .header__left, .nav__list, .header__btns-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__left {
+    gap: 20px;
+}
