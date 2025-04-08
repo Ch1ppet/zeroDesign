@@ -1,0 +1,55 @@
+.hero {
+    margin-bottom: 220px;
+}
+
+.hero__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero__subtitle {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #fff;
+    background: #CBAB58;
+    padding: 0 5px;
+}
+
+.hero__title {
+    margin-top: 40px;
+    font-size: 96px;
+    font-weight: 400;
+    line-height: 86.4px;
+
+    &--lower {
+        font-size: 50px;
+        line-height: 25.2px;
+    }
+}
+
+.hero__undertitle-text {
+    font-size: 26px;
+    line-height: 33.8px;
+    color: #333;
+    margin-top: 46px;
+    margin-bottom: 86px;
+}
+
+.hero__cards {
+    display: flex;
+    align-items: center;
+    gap: 66px;
+
+    &-item {
+        text-align: center;
+
+        &-words {
+            font-size: 10px;
+            line-height: 14.3px;
+            color: #333;
+            text-transform: uppercase;
+        }
+    }
+}
+
