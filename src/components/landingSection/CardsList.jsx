@@ -7,18 +7,18 @@ import fourthImg from '../../../public/assets/img/landing-pages/landing4.jpg';
 
 const CardList = () => {
     return (
-        <ul className="landing-page__cards">
-            <li className="landing-page__cards-item">
-                <Card img={firstImg} text="Landing 1"/>
+        <ul className="landing-page__cards cards-list">
+            <li className="landing-page__cards-item card-item">
+                <Card img={firstImg} text="Landing 1" id="landing1"/>
             </li>
-            <li className="landing-page__cards-item">
-                <Card img={secondImg} text="Landing 2"/>
+            <li className="landing-page__cards-item card-item">
+                <Card img={secondImg} text="Landing 2" id="landing2"/>
             </li>
-            <li className="landing-page__cards-item">
-                <Card img={thirdImg} text="Landing 3"/>
+            <li className="landing-page__cards-item card-item">
+                <Card img={thirdImg} text="Landing 3" id="landing3"/>
             </li>
-            <li className="landing-page__cards-item">
-                <Card img={fourthImg} text="Landing 4"/>
+            <li className="landing-page__cards-item card-item">
+                <Card img={fourthImg} text="Landing 4" id="landing4"/>
             </li>
         </ul>
     );

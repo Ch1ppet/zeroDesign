@@ -1,28 +1,19 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';  
-import Header from './components/header/Header.jsx';
-import Landing from './components/landingSection/LandingSection.jsx';
-import Company from './components/company/Company.jsx';
-import CMSPages from './components/cmspages/CMSPages.jsx';
-import Utility from './components/utilitySection/UtilitySection.jsx';
-import Footer from './components/footer/Footer.jsx';
-import Hero from './components/hero/Hero.jsx';
-import ZeroDesign from './components/zerodesign/ZeroDesign.jsx';
+import Home from './components/home/Home.jsx'
+import PageNotFound from './components/pageNotFound/PageNotFound.jsx'
+import Cart from "./components/cart/Cart.jsx";
 
 const App = () => {
     return (
-        <div>
-            <Router>
-                <Header />
-                <Hero />
-                <ZeroDesign />
-                <Landing />
-                <Company />
-                <CMSPages />
-                <Utility />
-                <Footer />
-            </Router>
-        </div>
+        <Router>
+            <Routes>
+                <Route exact path="/" element={<Home />} />
+                <Route path="cart" element={<Cart />}/>
+                <Route path="/:productId" element={``}/>
+                <Route path="*" element={<PageNotFound />} />
+            </Routes>
+        </Router>
     );
 };
 

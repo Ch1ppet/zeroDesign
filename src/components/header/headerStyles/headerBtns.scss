@@ -7,8 +7,17 @@
     color: #fff;
     background: #000;
     padding: 12px 26px 18px 26px;
+    transition: opacity .2s ease-in-out;
+
+    &:hover {
+        opacity: .8;
+    }
 }
 
 .img-btn {
     cursor: pointer;
+
+    &:hover {
+        transform: scale(1.02);
+    }
 }

@@ -1,6 +1,22 @@
 import React from "react";
+import { gsap } from "gsap";
+import { useGSAP } from '@gsap/react';
 
 const HeroMiniCard = ({ imgSrc, firstWord, secondWord }) => {
+    gsap.registerPlugin(useGSAP);
+    const tl = gsap.timeline();
+    
+    useGSAP(() => {
+        tl.fromTo('.hero__cards-item', {
+            y: 100,
+            opacity: 0,
+        }, {
+            y: 0,
+            opacity: 1,
+            duration: 1.5,
+        });
+    });
+
     return (
         <div className="hero__cards-item">
             <img src={imgSrc} alt="" className="hero__cards-item-img" />

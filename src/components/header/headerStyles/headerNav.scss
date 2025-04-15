@@ -1,6 +1,14 @@
 .nav__list {
     gap: 25px;
 
+    &-item {
+        transition: transform .1s ease-in-out;
+
+        &:hover {
+            transform: scale(1.01) translate(1px);
+        }
+    }
+
     &-item-link {
         font-size: 18px;
     }

@@ -1,0 +1,14 @@
+.cart {
+    margin-top: 100px;
+}
+
+.cart__list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px 0;
+
+    &-item {
+        background: #eee;
+        padding: 40px 50px;
+    }
+}

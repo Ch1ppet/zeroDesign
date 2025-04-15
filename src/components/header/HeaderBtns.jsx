@@ -12,11 +12,13 @@ const HeaderBtns = () => {
                 </li>
                 <li className="header__btns-list-item">
                     <search className="search">
-                        <img src={searchLogo} alt="" className="search__img img-btn" />
+                        <button>
+                            <img src={searchLogo} alt="" className="search__img img-btn"/>
+                        </button>
                     </search>
                 </li>
                 <li className="header__btns-list-item">
-                    <Link><img src={cartLogo} alt="" className="cart__img img-btn" /></Link>
+                    <Link to="/cart"><img src={cartLogo} alt="" className="cart__img img-btn" /></Link>
                 </li>
             </ul>
         </div>

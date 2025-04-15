@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 const HeaderNav = () => {
     return (
@@ -7,16 +7,16 @@ const HeaderNav = () => {
             <nav className="nav">
                 <ul className="nav__list">
                     <li className="nav__list-item">
-                        <Link className="nav__list-item-link">Landing</Link>
+                        <HashLink smooth to="/#Landing">Landing</HashLink>
                     </li>
                     <li className="nav__list-item">
-                        <Link className="nav__list-item-link">Company</Link>
+                        <HashLink smooth to="/#Company">Company</HashLink>
                     </li>
                     <li className="nav__list-item">
-                        <Link className="nav__list-item-link">CMS Pages</Link>
+                        <HashLink smooth to="/#CMSPages">CMS Pages</HashLink>
                     </li>
                     <li className="nav__list-item">
-                        <Link className="nav__list-item-link">Utility</Link>
+                        <HashLink smooth to="/#Utility">Utility</HashLink>
                     </li>
                 </ul>
             </nav>

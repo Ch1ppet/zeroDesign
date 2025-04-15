@@ -1,0 +1,13 @@
+.footer__icon-list {
+    display: flex;
+    align-items: center;
+    gap: 0 16px;
+}
+
+.footer__icon-list-item {
+    transition: transform .1s ease-in-out;
+}
+
+.footer__icon-list-item:hover {
+    transform: scale(1.01) translate(1px);
+}

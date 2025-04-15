@@ -34,4 +34,30 @@ a {
     background: #000;
     padding: 6px 100px 14px 30px;
     margin-bottom: 60px;
+    pointer-events: none;
+}
+
+.cards-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 78px 46px;
+}
+
+.card-item {
+    padding: 29px 29px 29px 31px;
+    background: #0000000A;
+    cursor: pointer;
+    transition: transform .2s ease-in-out;
+}
+
+.card-item:hover {
+    transform: scale(1.01);
+}
+
+.card__text {
+    font-size: 26px;
+    line-height: 32.5px;
+    text-transform: uppercase;
+    margin-top: 17px;
+    padding-left: 15px;
 }
