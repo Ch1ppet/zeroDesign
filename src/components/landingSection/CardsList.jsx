@@ -6,6 +6,7 @@ import thirdImg from '../../../public/assets/img/landing-pages/landing3.jpg';
 import fourthImg from '../../../public/assets/img/landing-pages/landing4.jpg';
 
 const CardList = () => {
+
     return (
         <ul className="landing-page__cards cards-list">
             <li className="landing-page__cards-item card-item">
